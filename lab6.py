@@ -16,7 +16,6 @@ def encode(password):
 
 
 # Decodes password
-# Paula Morales Rivera Decoder
 def decode(encoded_password):
     decoded_password = ''
     for digit in encoded_password:
@@ -33,7 +32,6 @@ def main():
             password = input('Please enter your password to encode: ')
             encoded_password = encode(password)
             print('Your password has been encoded and stored!\n')
-        # Paula Morales Decoder
         elif option == 2:
             decoded_password = decode(encoded_password)
             print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.\n')
